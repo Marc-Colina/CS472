@@ -83,10 +83,10 @@ h2 {
 }
 
 ul.credentials li::before {
-  content: "\f518"; /* FontAwesome unicode for the book icon */
-  font-family: "Font Awesome 6 Free";
+  content: "\2713";
   padding-right: 0.5rem;
   font-weight: 900;
+  color: green;
 }
 
 .moods {
