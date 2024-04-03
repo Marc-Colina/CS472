@@ -1,0 +1,86 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Profile Image CSS */
+.profile-image {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+  width: 20rem;
+  height: 20rem;
+}
+
+.profile-image:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.profile-image-div {
+  margin-left: 2rem;
+  position: absolute;
+  bottom: -3rem;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid white;
+}
+
+.profile-banner {
+  position: relative;
+  width: 100%;
+  height: 25rem; /* Adjust as needed */
+  background: url("../images/Empathy.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.name-header {
+  margin-top: 4rem;
+  margin-left: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Main Content CSS */
+.main-body {
+  background-color: #faf6f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10rem;
+  position: relative;
+}
+
+.list-of-pages {
+  font-size: 2rem;
+}
+
+/* Footer CSS */
+footer {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  position: absolute;
+  bottom: 0;
+  padding-inline: 1.5rem;
+  padding-block: 1.5rem;
+  background-color: #f2e7e4;
+  width: 100%;
+  img {
+    width: 12rem;
+    height: 5rem;
+  }
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  padding-inline: 3rem;
+  margin-top: 2rem;
+  flex: 1;
+}
