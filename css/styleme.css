@@ -1,32 +1,21 @@
-body {
-  background-color: #f2e7e4;
+header h1 {
+  font-size: 3.5rem;
+  margin-top: 3rem;
+  margin-left: 1rem;
 }
 
-header {
-  h1 {
-    font-size: 3.5rem;
-    margin: 1rem;
-  }
-  p {
-    font-size: 1.7rem;
-    margin: 1rem;
-  }
+header p {
+  font-size: 1.7rem;
+  margin: 1rem;
 }
 
-.about-me-main-content {
-  .divs-for-main-content {
-    margin-top: 5rem;
-    margin-left: 2rem;
-  }
+h2 {
+  font-size: 2.5rem;
+}
 
-  h2 {
-    font-size: 2.5rem;
-  }
-
-  li {
-    font-size: 2rem;
-    margin-left: 2rem;
-  }
+.about-me-main-content .divs-for-main-content {
+  margin-top: 5rem;
+  margin-left: 2rem;
 }
 
 .card-container {
@@ -37,119 +26,109 @@ header {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 40%;
+  width: 45%;
   border-radius: 5px;
   display: flex;
   margin: 1rem;
   background-color: #f2e7e4;
-  img {
-    width: 25rem;
-    height: 30rem;
-    object-fit: cover;
-    border-radius: 2%;
-    margin: 2rem;
-  }
-
-  ul > li {
-    list-style-type: none;
-    padding-left: 0;
-    margin-left: 0;
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-  }
-
-  a {
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  .card-info {
-    margin-top: 1rem;
-    padding: 1rem;
-    font-size: 2rem;
-  }
-  .card-info-genre {
-    margin-bottom: 1rem;
-    font-size: 1.2rem;
-  }
-
-  .card-info-synopsis {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    &::first-letter {
-      font-size: 1.5em;
-    }
-  }
-  .card-info-highlight {
-    color: blue;
-  }
-  .card-info-people {
-    font-size: 1.5rem;
-  }
-
-  ul.credentials > li {
-    margin-top: 1rem;
-    font-weight: normal;
-  }
-  ul.credentials li::before {
-    content: "\f518"; /* FontAwesome unicode for the book icon */
-    font-family: "Font Awesome 6 Free"; /* Set the font family to FontAwesome */
-    padding-right: 0.5rem; /* Add space between the icon and text */
-    font-weight: 900; /* Ensure the solid style is used, if necessary */
-  }
-
-  .faculty {
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
-  }
 }
 
+.card img {
+  width: 25rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 2%;
+  margin: 2rem;
+}
+
+.card ul > li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card-info {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.card-info h4 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+.card .card-info-synopsis::first-letter {
+  font-size: 1.5em;
+}
+
+.card-info-genre {
+  font-size: 1.2rem;
+}
+
+.card-info-highlight {
+  color: blue;
+}
+
+.credentials {
+  margin-top: 3rem;
+}
+
+ul.credentials li::before {
+  content: "\f518"; /* FontAwesome unicode for the book icon */
+  font-family: "Font Awesome 6 Free";
+  padding-right: 0.5rem;
+  font-weight: 900;
+}
+
+.moods {
+  display: flex;
+}
 .my-moods {
   display: flex;
-
-  img {
-    width: 35rem;
-    height: 35rem;
-    object-fit: cover;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    border-radius: 2%;
-  }
+  flex-direction: column;
 }
 
-.my-moods-label {
-  display: flex;
-  p {
-    font-size: 3rem;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  }
-  #cute-mood {
-    margin-left: 10rem;
-    color: rgb(243, 147, 147);
-  }
-  #energetic-mood {
-    margin-left: 15rem;
-    color: rgb(221, 126, 58);
-  }
+.my-moods img {
+  width: 35rem;
+  height: 35rem;
+  object-fit: cover;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  border-radius: 2%;
+}
+
+.my-moods p {
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-left: 8rem;
+  color: rgb(221, 126, 58);
 }
 
 .fun-facts {
   display: flex;
   align-items: center;
-  img {
-    width: 30rem;
-    height: 30rem;
-    object-fit: cover;
-    margin: 2rem;
-    border-radius: 2%;
-    float: left;
-  }
+  padding-bottom: 10rem;
+}
 
-  p {
-    margin-left: 2rem;
-    font-size: 1.7rem;
-  }
+.fun-facts img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: cover;
+  margin: 2rem;
+  border-radius: 2%;
+  float: left;
+}
+
+.fun-facts p {
+  margin-left: 2rem;
+  font-size: 1.8rem;
 }
