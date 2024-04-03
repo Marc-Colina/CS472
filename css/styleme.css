@@ -15,7 +15,7 @@ h2 {
 
 .about-me-main-content .divs-for-main-content {
   margin-top: 5rem;
-  margin-left: 2rem;
+  padding-inline: 2rem;
 }
 
 .card-container {
@@ -131,4 +131,31 @@ ul.credentials li::before {
 .fun-facts p {
   margin-left: 2rem;
   font-size: 1.8rem;
+}
+
+@media screen and (max-width: 44em) {
+  .card-container,
+  .card,
+  .moods,
+  .fun-facts {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .card img {
+    display: inline-block;
+    margin: 1rem auto;
+  }
+
+  .card-container {
+    gap: 2rem;
+  }
+
+  .fun-facts {
+    padding-bottom: 20rem;
+  }
 }
