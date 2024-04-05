@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/common_styles.css" />
+    <link rel="stylesheet" href="css/cs-helpdesk-login.css" />
+    <title>CS Helpdesk Login</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-grid">
+        <div>
+          <img src="images/miu.png" alt="MIU" />
+        </div>
+        <div class="vertical-bar"></div>
+        <div class="miu"><span>Maharishi University IT Dept</span></div>
+        <div class="right-links"></div>
+        <div class="right-links"><a href="">Agent Portal</a></div>
+        <div class="right-links"><a href="">Submit Ticket</a></div>
+        <div class="right-links"><a href="">Knowledge Base</a></div>
+        <div class="right-links"><a href="">Login</a></div>
+        <!-- Select Dropdown Navbar, initially hidden -->
+        <div class="navbar-select">
+          <select>
+            <option value="" selected disabled>Select a link</option>
+            <option value="">Agent Portal</option>
+            <option value="">Submit Ticket</option>
+            <option value="">Knowledge Base</option>
+            <option value="">Login</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <div class="welcome-support-center">
+      <p>Welcome to our Support Center</p>
+    </div>
+    <div class="main-content">
+      <div class="left-pane">
+        <div class="left-pane-form">
+          <div>
+            <h2>Login</h2>
+          </div>
+          <div>
+            <p>Login to know the status of the ticket</p>
+          </div>
+          <div>
+            <button></button>
+          </div>
+          <div class="login-divider">
+            <div class="line"></div>
+            <span class="text">or login using</span>
+            <div class="line"></div>
+          </div>
+          <div class="input text">
+            <label for="username_email">Username or Email</label>
+            <input
+              type="text"
+              placeholder="Enter email"
+              name="username_email"
+            />
+          </div>
+          <div class="input text">
+            <label for="password">Password</label>
+            <input type="text" placeholder="Enter password" name="password" />
+          </div>
+          <div class="checkbox">
+            <div class="remember-me">
+              <input type="checkbox" name="remember_me" id="remember_me" />
+              <label for="remember_me">Remember me</label>
+            </div>
+            <a href="">Forgot password?</a>
+          </div>
+          <div class="button input">
+            <input type="button" value="Login" />
+          </div>
+        </div>
+      </div>
+      <div class="vertical-border">
+        <div></div>
+      </div>
+      <div class="hr-divider">
+        <hr />
+      </div>
+      <div id="right-pane">
+        <div class="right-pane-paragraph">
+          <p>
+            Login to track your existing support requests.If you have not
+            created a ticket yet, then you would need to
+            <a href="">register</a> or <a href="">create a new ticket</a> to
+            begin.
+          </p>
+          <div class="button input submit">
+            <input type="button" value="Submit ticket" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="cs-helpdesk-footer">
+      <div>
+        <a
+          href="https://validator.w3.org/check?url=https://marc-colina.github.io/CS472/cs-helpdesk-login.html"
+        >
+          <img
+            src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png"
+            alt="Validate"
+          />
+        </a>
+      </div>
+      <div>
+        <a
+          href="https://jigsaw.w3.org/css-validator/validator?uri=https://marc-colina.github.io/CS472/css/cs-helpdesk-login.css"
+        >
+          <img
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid
+              CSS!"
+          />
+        </a>
+      </div>
+      <div></div>
+      <div class="copyright">
+        <p>Copyright 2020, All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>

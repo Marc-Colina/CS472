@@ -1,0 +1,272 @@
+body {
+  position: relative;
+}
+
+.header-grid {
+  display: grid;
+  grid-template-columns: 5rem 1rem 25rem auto 13rem 13rem 13rem 13rem;
+  text-align: center;
+}
+
+.header-grid .navbar-select {
+  display: none;
+}
+
+.header-grid > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 1rem;
+  margin-inline: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.header-grid .miu {
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+.header-grid a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-grid img {
+  border-radius: 50%;
+  width: 4rem;
+}
+
+.header-grid .vertical-bar {
+  margin-top: 2rem;
+  width: 0.03rem;
+  height: 2rem;
+  background-color: #000;
+}
+
+.welcome-support-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #115156;
+  height: 15rem;
+}
+
+.welcome-support-center > p {
+  color: white;
+  font-size: 4rem;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 49.7% 0.6% 49.7%;
+  background-color: #f3f3f3;
+  padding-bottom: 5rem;
+}
+
+.main-content .hr-divider {
+  display: none;
+}
+
+.main-content > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-content .left-pane {
+  margin-top: 10rem;
+}
+
+.main-content .vertical-border {
+  flex: 1;
+  justify-content: end;
+}
+
+.main-content .vertical-border > div {
+  background-color: rgb(193, 192, 192); /* Sets the line color */
+  width: 0.1rem;
+  height: 90%;
+}
+
+.main-content .left-pane button {
+  background-image: url(../images/azure_ad.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  background-color: white;
+  width: 35rem;
+  height: 4rem;
+  border-style: solid; /* Defines a solid border */
+  border-width: 1px; /* Sets the width of the border; adjust as necessary */
+  border-color: #ebebeb; /* Sets the color of the border; choose a light grey or other color that suits your design */
+  border-radius: 5px; /* Adjusts the corner radius to round the corners; increase for more rounded corners */
+}
+
+a {
+  font-size: 1.7rem;
+  text-decoration: none;
+  color: #5ba9d9;
+  font-weight: normal;
+}
+
+.left-pane h2 {
+  font-size: 3.5rem;
+}
+
+.left-pane label,
+p {
+  font-size: 1.7rem;
+  color: rgb(113, 112, 112);
+}
+
+.left-pane-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.left-pane .login-divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #a5a1a3; /* Adjust the color to match your design */
+}
+
+.left-pane .login-divider .line {
+  flex: 1;
+  height: 0.02rem; /* Sets the height of the line */
+  background-color: #edeced; /* Sets the line color */
+}
+
+.left-pane .login-divider .text {
+  flex: 0.5;
+  font-size: 1.2rem;
+}
+
+.input.text > input {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox .remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  white-space: nowrap;
+}
+
+.checkbox input {
+  vertical-align: middle;
+}
+
+.button input {
+  background-color: black;
+  color: white;
+  font-size: 1.5rem;
+}
+
+#right-pane {
+  margin-top: 3rem;
+}
+#right-pane .right-pane-paragraph {
+  margin-top: 7rem;
+  width: 60%;
+}
+
+#right-pane .right-pane-paragraph p {
+  font-weight: bold;
+  color: rgb(99, 99, 99);
+  font-size: 1.7rem;
+}
+
+.submit > input {
+  width: 11rem;
+  margin-top: 1rem;
+}
+
+.cs-helpdesk-footer {
+  display: grid;
+  grid-template-columns: 12rem 12rem auto 18rem;
+  height: 8rem;
+  gap: 0;
+  background-color: #e6e6e6;
+}
+
+footer {
+  position: static;
+}
+footer.cs-helpdesk-footer .copyright {
+  align-self: stretch;
+}
+
+.cs-helpdesk-footer .copyright > p {
+  font-size: 1.2rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 54em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 42em) {
+  html {
+    font-size: 45%;
+  }
+  .header-grid > div {
+    margin-block: 0;
+    margin-inline: 0;
+  }
+  .main-content {
+    grid-template-columns: 100%;
+  }
+
+  .header-grid .vertical-bar {
+    margin-top: 0.8rem;
+  }
+
+  .main-content .hr-divider {
+    display: block;
+    margin-top: 7rem;
+    width: 70%;
+    align-self: center;
+    justify-self: center;
+  }
+  .main-content .vertical-border {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 38em) {
+  .header-grid {
+    grid-template-columns: 5rem 1rem 25rem auto;
+  }
+
+  .header-grid .right-links {
+    display: none;
+  }
+
+  .header-grid .navbar-select {
+    display: block;
+    justify-self: auto;
+  }
+
+  .header-grid {
+    text-align: right;
+  }
+  .header-grid .navbar-select select {
+    height: 100%;
+    border: none;
+  }
+  .welcome-support-center {
+    text-align: center;
+  }
+}
