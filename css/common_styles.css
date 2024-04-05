@@ -63,3 +63,13 @@ footer img {
   width: 12rem;
   height: 5rem;
 }
+
+/* Common input styling */
+input {
+  border-color: #ebebeb; /* Sets the color of the border; choose a light grey or other color that suits your design */
+  border-radius: 5px; /* Adjusts the corner radius to round the corners; increase for more rounded corners */
+  border-style: solid; /* Defines a solid border */
+  border-width: 1px; /* Sets the width of the border; adjust as necessary */
+  width: 100%;
+  height: 3.5rem;
+}
