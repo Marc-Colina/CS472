@@ -56,21 +56,11 @@
         <div class="new-product-form-label"><h2>New Product Form</h2></div>
         <div class="mb-3">
           <label for="productNumber" class="form-label">Product Number</label>
-          <input
-            type="text"
-            class="form-control"
-            id="productNumber"
-            aria-describedby="emailHelp"
-          />
+          <input type="text" class="form-control" id="productNumber" />
         </div>
         <div class="mb-3">
           <label for="productName" class="form-label">Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="productName"
-            aria-describedby="emailHelp"
-          />
+          <input type="text" class="form-control" id="productName" />
         </div>
         <div class="mb-3">
           <label for="unitPrice" class="form-label">Unit Price</label>
@@ -78,7 +68,6 @@
             type="text"
             class="form-control"
             id="unitPrice"
-            aria-describedby="emailHelp"
             placeholder="0.0"
           />
         </div>
@@ -90,7 +79,6 @@
             type="text"
             class="form-control"
             id="quantityInStock"
-            aria-describedby="emailHelp"
             placeholder="0"
           />
         </div>
@@ -99,6 +87,7 @@
           <select
             class="form-select"
             aria-label="Default select example"
+            aria-describedby="supplierHelp"
             id="selectSupplier"
           >
             <option selected disabled>Select a Supplier</option>
@@ -106,7 +95,7 @@
             <option value="2">Supplier 2</option>
             <option value="3">Supplier 3</option>
           </select>
-          <div id="emailHelp" class="form-text helper-text">
+          <div id="supplierHelp" class="form-text helper-text">
             Choose a supplier from the dropdown.
           </div>
         </div>
@@ -116,10 +105,10 @@
             type="text"
             class="form-control"
             id="dateSupplied"
-            aria-describedby="emailHelp"
+            aria-describedby="dateHelp"
             placeholder="0"
           />
-          <div id="emailHelp" class="form-text helper-text">
+          <div id="dateHelp" class="form-text helper-text">
             Enter a valid Date.
           </div>
         </div>
