@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Form 1</title>
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-5.3.3-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/common_styles.css" />
+    <link rel="stylesheet" href="css/cs-helpdesk-and-webform-common.css" />
+    <link rel="stylesheet" href="css/webform1.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-grid">
+        <div>
+          <img src="images/miu.png" alt="MIU" />
+        </div>
+        <div class="vertical-bar"></div>
+        <div class="miu"><span>Maharishi University IT Dept</span></div>
+        <div class="right-links"></div>
+        <div class="right-links"><a href="">Agent Portal</a></div>
+        <div class="right-links"><a href="">Submit Ticket</a></div>
+        <div class="right-links"><a href="">Knowledge Base</a></div>
+        <div class="right-links"><a href="">Login</a></div>
+        <!-- Select Dropdown Navbar, initially hidden -->
+        <div class="navbar-select">
+          <select>
+            <option value="" selected disabled>Select a link</option>
+            <option value="">Agent Portal</option>
+            <option value="">Submit Ticket</option>
+            <option value="">Knowledge Base</option>
+            <option value="">Login</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <form action="webform2.html" method="get">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label webform-label"
+            >Website URL</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Website URL"
+            pattern="^(http:\/\/|https:\/\/)[^\/].*"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label webform-label"
+            >First Name</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="first name"
+            pattern="[A-Z][a-zA-Z ]+"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label webform-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+            required
+          />
+          <div id="emailHelp" class="form-text never-share">
+            We'll never share your email with anyone else.
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label webform-label"
+            >Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+            pattern=".........."
+            required
+          />
+          <div id="emailHelp" class="form-text never-share">
+            We'll never share your password with anyone else.
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary webform-button">
+          Submit
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

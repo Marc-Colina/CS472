@@ -1,0 +1,46 @@
+.header-grid {
+  display: grid;
+  grid-template-columns: 5rem 1rem 25rem auto 13rem 13rem 13rem 13rem;
+  text-align: center;
+}
+
+.header-grid .navbar-select {
+  display: none;
+}
+
+.header-grid > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 1rem;
+  margin-inline: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.header-grid .miu {
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+.header-grid a {
+  text-decoration: none;
+  color: black;
+}
+
+.header-grid img {
+  border-radius: 50%;
+  width: 4rem;
+}
+
+.header-grid .vertical-bar {
+  margin-top: 2rem;
+  width: 0.03rem;
+  height: 2rem;
+  background-color: #000;
+}
+
+.separator {
+  border-right: 1px solid #ffffff; /* Or any color you prefer /
+  margin-right: 15px; / Optional: to give some space after the separator /
+  padding-right: 15px; / Optional: to give some space before the separator */
+}

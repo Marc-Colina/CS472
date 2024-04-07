@@ -1,0 +1,60 @@
+input::placeholder {
+  font-size: 1.5rem;
+}
+.webform-label {
+  font-size: 1.7rem;
+}
+
+.never-share {
+  font-size: 1rem;
+}
+
+.webform-button {
+  width: 9rem;
+  height: 4rem;
+  font-size: 1.7rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 54em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 42em) {
+  html {
+    font-size: 45%;
+  }
+  .header-grid > div {
+    margin-block: 0;
+    margin-inline: 0;
+  }
+
+  .header-grid .vertical-bar {
+    margin-top: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 38em) {
+  .header-grid {
+    grid-template-columns: 5rem 1rem 25rem auto;
+  }
+
+  .header-grid .right-links {
+    display: none;
+  }
+
+  .header-grid .navbar-select {
+    display: block;
+    justify-self: auto;
+  }
+
+  .header-grid {
+    text-align: right;
+  }
+  .header-grid .navbar-select select {
+    height: 100%;
+    border: none;
+  }
+}
