@@ -30,6 +30,7 @@
 }
 .form-container input {
   height: 5rem;
+  font-size: 1.5rem;
 }
 
 .form-container input::placeholder {
@@ -45,6 +46,7 @@
 
 select {
   height: 4.8em;
+  font-size: 1.8rem;
 }
 
 label {
