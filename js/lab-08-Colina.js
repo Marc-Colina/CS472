@@ -77,9 +77,7 @@ function Animal(name, speed) {
 }
 
 Animal.prototype.run = function (speed) {
-  if (speed < this.speed)
-    console.error("Cannot decrease or maintain speed. Must increase");
-  else this.speed = speed;
+  this.speed += speed;
 };
 
 Animal.compareBySpeed = function (a1, a2) {
