@@ -1,0 +1,14 @@
+{
+  "name": "lab14-colina",
+  "version": "1.0.0",
+  "description": "Lab 14 WAP Assignment",
+  "main": "app.js",
+  "scripts": {
+    "start": "set PORT=3000 && set NODE_ENV=development && nodemon app.js"
+  },
+  "author": "Marc Lennard Colina",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
