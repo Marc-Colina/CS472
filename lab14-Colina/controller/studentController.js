@@ -56,6 +56,8 @@ let studentController = {
 
   updateStudent: function (req, res) {
     try {
+      console.log("I GoT hereeee!");
+      console.log(req.body);
       if (!req.body) throw new Error("Please provide needed information.");
       let student = req.body;
       res.json(Student.updateStudent(student));
