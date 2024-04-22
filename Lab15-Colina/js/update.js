@@ -8,6 +8,7 @@ updateBtn.addEventListener("click", updateStudentDetails);
 
 function populateStudentDetails() {
   const id = document.getElementById("ddlStudent").value;
+  //If id is blank meaning, the default option was selected which isn't an ID number.
   if (id == "") {
     clearAllFields();
     return;
